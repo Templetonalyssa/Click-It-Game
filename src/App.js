@@ -6,7 +6,7 @@ import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import friends from "./friends.json";
 import Counter from "./components/Counter";
-import _ from "lodash";
+import _ from 'lodash';
 
 
 class App extends Component {
@@ -45,16 +45,16 @@ class App extends Component {
   };
 
   reset = () => {
-    let 
+    let catarray = [this.state.friends];
+    let shuffleCats = _.shuffle(catarray);
     console.log("I'm reset")
     this.setState({
       friends: this.state.friends.map((cat) => {
         cat.clicked = false;
         return cat;
       }),
-      count: 0
-
-    })
+      count: 0 });
+    this.setState({ friends: shuffleCats});
   };
 
 
