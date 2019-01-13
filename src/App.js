@@ -1,7 +1,7 @@
 import React, {
   Component
 } from "react";
-import FriendCard from "./components/FriendCard";
+import CatCard from "./components/CatCard";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import friends from "./friends.json";
@@ -73,7 +73,7 @@ class App extends Component {
   
         <Title> 🐾 Clicky Cats 🐾Score: {this.state.count}/12 🐾 </Title> {
         this.state.friends.map(friend => 
-          ( < FriendCard
+          ( < CatCard
           // removeFriend={this.removeFriend}
           id = {friend.id}
           key = {friend.id}

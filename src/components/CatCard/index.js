@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-function FriendCard(props) {
+function CatCard(props) {
   return (
     <div className="card" onClick={()=>props.cardIncrement(props.id)}>
       <div className="img-container">
@@ -13,4 +13,4 @@ function FriendCard(props) {
   );
 }
 
-export default FriendCard;
+export default CatCard;
