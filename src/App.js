@@ -59,7 +59,7 @@ class App extends Component {
   };
 
   shuffle = () => {
-    let catarray = [this.state.friends];
+    let catarray = this.state.friends;
     let shuffleCats = _.shuffle(catarray);
     this.setState({ friends: shuffleCats});
   }
