@@ -40,13 +40,15 @@ class App extends Component {
     });
     if (clickedCat === true) {
       this.reset();
+      this.shuffle();
     }
+
+
 
   };
 
   reset = () => {
-    let catarray = [this.state.friends];
-    let shuffleCats = _.shuffle(catarray);
+    
     console.log("I'm reset")
     this.setState({
       friends: this.state.friends.map((cat) => {
@@ -54,8 +56,13 @@ class App extends Component {
         return cat;
       }),
       count: 0 });
-    this.setState({ friends: shuffleCats});
   };
+
+  shuffle = () => {
+    let catarray = [this.state.friends];
+    let shuffleCats = _.shuffle(catarray);
+    this.setState({ friends: shuffleCats});
+  }
 
 
   // Map over this.state.friends and render a FriendCard component for each friend object
