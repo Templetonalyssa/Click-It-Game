@@ -5,7 +5,6 @@ import FriendCard from "./components/FriendCard";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import friends from "./friends.json";
-import Counter from "./components/Counter";
 import _ from 'lodash';
 
 
@@ -26,12 +25,16 @@ class App extends Component {
     });
     this.setState({
       friends: this.state.friends.map((cat) => {
+  
         if (cat.id === id) {
-
+             
           if (cat.clicked === true) {
             clickedCat = true
+
           }
           cat.clicked = true;
+          
+          
 
         }
         return cat;
@@ -40,10 +43,9 @@ class App extends Component {
     });
     if (clickedCat === true) {
       this.reset();
-      this.shuffle();
     }
 
-
+    this.shuffle();
 
   };
 
@@ -68,8 +70,8 @@ class App extends Component {
   // Map over this.state.friends and render a FriendCard component for each friend object
   render() {
     return ( < Wrapper >
-        <Counter > Score: {this.state.count }/12 </Counter >
-        < Title > Clicky Cats </Title> {
+  
+        <Title> 🐾 Clicky Cats 🐾Score: {this.state.count}/12 🐾 </Title> {
         this.state.friends.map(friend => 
           ( < FriendCard
           // removeFriend={this.removeFriend}
