@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/Click-It-Game/static/js/runtime~main.6485e62f.js"
   },
   {
-    "revision": "8e740076a7536730f444",
-    "url": "/Click-It-Game/static/js/main.8e740076.chunk.js"
+    "revision": "14473fafaec2c3336865",
+    "url": "/Click-It-Game/static/js/main.14473faf.chunk.js"
   },
   {
     "revision": "57a303316a909218c372",
     "url": "/Click-It-Game/static/js/1.57a30331.chunk.js"
   },
   {
-    "revision": "8e740076a7536730f444",
-    "url": "/Click-It-Game/static/css/main.af620076.chunk.css"
+    "revision": "14473fafaec2c3336865",
+    "url": "/Click-It-Game/static/css/main.1206dc4f.chunk.css"
   },
   {
-    "revision": "98316e52bc407b52c5681d9a994cdc6d",
+    "revision": "13739e70acc2f0b1fc08e8df2cfe6018",
     "url": "/Click-It-Game/index.html"
   }
 ];
